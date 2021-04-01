@@ -1,30 +1,24 @@
-/**
-* Generated theme by Material Theme Generator
-* https://materialtheme.arcsine.dev
-*/
-
 @import '~@angular/material/theming';
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
+@include mat-core();
 
 // Fonts
-@import 'https://fonts.googleapis.com/css?family=Material+Icons';
-@import url('https://fonts.googleapis.com/css?family=Anton:300,400,500');
+@import 'https://fonts.googleapis.com/css?family=Material+Icons+Outlined';
+@import url('https://fonts.googleapis.com/css?family=Abel:300,400,500');
      
 $fontConfig: (
-  display-4: mat-typography-level(112px, 112px, 300, 'Anton', -0.0134em),
-  display-3: mat-typography-level(56px, 56px, 400, 'Anton', -0.0089em),
-  display-2: mat-typography-level(45px, 48px, 400, 'Anton', 0.0000em),
-  display-1: mat-typography-level(34px, 40px, 400, 'Anton', 0.0074em),
-  headline: mat-typography-level(24px, 32px, 400, 'Anton', 0.0000em),
-  title: mat-typography-level(20px, 32px, 500, 'Anton', 0.0075em),
-  subheading-2: mat-typography-level(16px, 28px, 400, 'Anton', 0.0094em),
-  subheading-1: mat-typography-level(15px, 24px, 500, 'Anton', 0.0067em),
-  body-2: mat-typography-level(14px, 24px, 500, 'Anton', 0.0179em),
-  body-1: mat-typography-level(14px, 20px, 400, 'Anton', 0.0179em),
-  button: mat-typography-level(14px, 14px, 500, 'Anton', 0.0893em),
-  caption: mat-typography-level(12px, 20px, 400, 'Anton', 0.0333em),
-  input: mat-typography-level(inherit, 1.125, 400, 'Anton', 1.5px)
+  display-4: mat-typography-level(112px, 112px, 300, 'Abel', -0.0134em),
+  display-3: mat-typography-level(56px, 56px, 400, 'Abel', -0.0089em),
+  display-2: mat-typography-level(45px, 48px, 400, 'Abel', 0.0000em),
+  display-1: mat-typography-level(34px, 40px, 400, 'Abel', 0.0074em),
+  headline: mat-typography-level(24px, 32px, 400, 'Abel', 0.0000em),
+  title: mat-typography-level(20px, 32px, 500, 'Abel', 0.0075em),
+  subheading-2: mat-typography-level(16px, 28px, 400, 'Abel', 0.0094em),
+  subheading-1: mat-typography-level(15px, 24px, 500, 'Abel', 0.0067em),
+  body-2: mat-typography-level(14px, 24px, 500, 'Abel', 0.0179em),
+  body-1: mat-typography-level(14px, 20px, 400, 'Abel', 0.0179em),
+  button: mat-typography-level(14px, 14px, 500, 'Abel', 0.0893em),
+  caption: mat-typography-level(12px, 20px, 400, 'Abel', 0.0333em),
+  input: mat-typography-level(inherit, 1.125, 400, 'Abel', 1.5px)
 );
 
 // Foreground Elements
@@ -85,7 +79,7 @@ $mat-dark-theme-foreground: (
 
 // Background config
 // Light bg
-$light-background:    #fafafa;
+$light-background:    #ffffff;
 $light-bg-darker-5:   darken($light-background, 5%);
 $light-bg-darker-10:  darken($light-background, 10%);
 $light-bg-darker-20:  darken($light-background, 20%);
@@ -119,8 +113,8 @@ $dark-bg-lighter-5:   lighten($dark-background, 5%);
 $dark-bg-lighter-10:  lighten($dark-background, 10%);
 $dark-bg-lighter-20:  lighten($dark-background, 20%);
 $dark-bg-lighter-30:  lighten($dark-background, 30%);
-$light-bg-alpha-4:    rgba(#fafafa, 0.04);
-$light-bg-alpha-12:   rgba(#fafafa, 0.12);
+$light-bg-alpha-4:    rgba(#ffffff, 0.04);
+$light-bg-alpha-12:   rgba(#ffffff, 0.12);
 
 // Background palette for dark themes.
 $mat-dark-theme-background: (
@@ -147,41 +141,41 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
-  --primary-color: #263238;
-  --primary-lighter-color: #bec2c3;
-  --primary-darker-color: #171f24;
+  --primary-color: #000000;
+  --primary-lighter-color: #d900ff;
+  --primary-darker-color: #000000;
   --text-primary-color: #{$light-primary-text};
-  --text-primary-lighter-color: #{$dark-primary-text};
+  --text-primary-lighter-color: #{$light-primary-text};
   --text-primary-darker-color: #{$light-primary-text};
 }
 
 $mat-primary: (
-  main: #263238,
-  lighter: #bec2c3,
-  darker: #171f24,
-  200: #263238, // For slide toggle,
+  main: #000000,
+  lighter: #d900ff,
+  darker: #000000,
+  200: #000000, // For slide toggle,
   contrast : (
     main: $light-primary-text,
-    lighter: $dark-primary-text,
+    lighter: $light-primary-text,
     darker: $light-primary-text,
   )
 );
 $theme-primary: mat-palette($mat-primary, main, lighter, darker);
 
 body {
-  --accent-color: #efba05;
-  --accent-lighter-color: #faeab4;
-  --accent-darker-color: #e8a303;
+  --accent-color: #ffd740;
+  --accent-lighter-color: #ffe57f;
+  --accent-darker-color: #ffc400;
   --text-accent-color: #{$dark-primary-text};
   --text-accent-lighter-color: #{$dark-primary-text};
   --text-accent-darker-color: #{$dark-primary-text};
 }
 
 $mat-accent: (
-  main: #efba05,
-  lighter: #faeab4,
-  darker: #e8a303,
-  200: #efba05, // For slide toggle,
+  main: #ffd740,
+  lighter: #ffe57f,
+  darker: #ffc400,
+  200: #ffd740, // For slide toggle,
   contrast : (
     main: $dark-primary-text,
     lighter: $dark-primary-text,
@@ -216,10 +210,15 @@ $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 
 // Theme Init
-@include angular-material-theme($theme);
+.light-mode {
+  @include angular-material-theme($theme);
+}
 
-.theme-alternate {
+
+.dark-mode {
   @include angular-material-theme($altTheme);
+  background-color: #333;
+  color: whitesmoke;
 }
 
 // Specific component overrides, pieces that are not in line with the general theming
@@ -239,10 +238,27 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 
 .material-icons {
   font-size: 24px;
-  font-family: 'Material Icons', 'Material Icons';  
+  font-family: 'Material Icons Outlined', 'Material Icons';  
   .mat-badge-content {
-    font-family: 'Anton';
+    font-family: 'Abel';
   }
 }
 
-html, body { height: 100%; }
+html { 
+  height: 100%; 
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  padding: .5rem;
+  position: relative;
+}
+
+main {
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px !important;
+  min-height: calc(100vh - 300px);
+}

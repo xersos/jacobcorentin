@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { environment } from '@env/environment';
+import { MaterialModule } from './material.module';
 
 export const MY_FORMATS = {
     parse: {
@@ -18,24 +19,20 @@ export const MY_FORMATS = {
     },
 };
 
-const materialModules = [
-    
-];
-
 @NgModule({
     imports: [
         CommonModule,
-        
+        MaterialModule,
     ],
     declarations: [
     ],
     exports: [
         CommonModule,
         FormsModule,
+        HttpClientModule,
+        MaterialModule,
         ReactiveFormsModule,
         RouterModule,
-        HttpClientModule,
-        materialModules,
     ]
 })
 export class SharedModule {

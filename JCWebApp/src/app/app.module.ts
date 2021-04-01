@@ -1,28 +1,32 @@
-import { APP_INITIALIZER, Injector, NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
-import { APP_BASE_HREF } from '@angular/common';
-import { Router } from '@angular/router';
 import { EnvironmentConfigService } from '@shared/services';
 import { SharedModule } from '@shared/shared.module';
-import { catchError } from 'rxjs/operators';
 import { appRoutedComponents, AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { HelpComponent } from './help/help.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
     imports: [
+        AppRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
-        SharedModule.forRoot(),
         LoadingBarRouterModule,
-        AppRoutingModule,
+        SharedModule.forRoot(),
     ],
     declarations: [
         AppComponent,
         appRoutedComponents,
+        ForbiddenComponent,
+        HelpComponent,
+        NavComponent,
     ],
     providers: [
         {
