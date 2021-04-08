@@ -1,0 +1,48 @@
+.cj-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+  
+    border-radius: 3px;
+  
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+  
+    transition: background 150ms ease;
+  
+    img {
+      margin-right: 8px;
+    }
+  }
+  
+  .cj-btn--github {
+  
+    &:hover {
+      background: darken(#454658, 5);
+    }
+  
+    img {
+      width: 19px;
+    }
+  }
+  
+  .cj-btn--discord {
+  
+    &:hover {
+      background: darken(#6578C0, 3);
+    }
+  
+    img {
+      width: 16px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+    .cj-btn {
+      padding: 8px 12px;
+      font-size: 11px;
+    }
+  }
+  

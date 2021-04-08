@@ -1,0 +1,15 @@
+<mat-toolbar class="main-navigation">
+  <mat-toolbar-row>
+    <div class="nav-logo" *ngIf="isDarkMode">
+      <img src="./../../assets/icons/faviconWhite.png" height="48" alt="logo">
+    </div>
+    <div class="nav-logo" *ngIf="!isDarkMode">
+      <img src="./../../assets/icons/favicon.png" height="48" alt="logo">
+    </div>
+    <span style="flex: 1 1 auto"></span>
+    <mat-slide-toggle (click)="toggleDarkMode()" labelPosition="before" [(ngModel)]="isDarkMode">
+      <mat-icon *ngIf="!isDarkMode" class="mr-8">brightness_5</mat-icon>
+      <mat-icon *ngIf="isDarkMode">bedtime</mat-icon>
+    </mat-slide-toggle>
+  </mat-toolbar-row>
+</mat-toolbar>
