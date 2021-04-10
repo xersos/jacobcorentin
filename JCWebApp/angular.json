@@ -26,9 +26,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/assets/config",
+              "src/assets/img"
             ],
             "styles": [
+              "src/assets/style/preloader.scss",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/assets/global-style.scss"
             ],
