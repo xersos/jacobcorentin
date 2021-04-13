@@ -4,7 +4,6 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { environment } from '@env/environment';
 import { MaterialModule } from './material.module';
 
 export const MY_FORMATS = {

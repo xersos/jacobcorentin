@@ -1,21 +1,18 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <!-- <nav class="footer-nav">
-        <ul>
-          <li>Social</li>
-          <li>Social</li>
-          <li>Social</li>
-        </ul>
-      </nav> -->
-      <div class="credits ml-auto">
-        <span class="copyright">
-          © {{test | date: 'yyyy'}}, made with
-          <mat-icon *ngIf="isDarkMode">favorite_border</mat-icon>
-          <mat-icon *ngIf="!isDarkMode">favorite</mat-icon>
-          by Jacob Corentin
-        </span>
-      </div>
+      <span>
+        © {{test | date: 'yyyy'}}, made with
+        <mat-icon *ngIf="isDarkMode">favorite_border</mat-icon>
+        <mat-icon *ngIf="!isDarkMode">favorite</mat-icon>
+        by Jacob Corentin
+      </span>
+    </div>
+    <div class="social-menu">
+      <ul>
+        <li><a href=""><i class="fa fa-github"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+      </ul>
     </div>
   </div>
 </footer>

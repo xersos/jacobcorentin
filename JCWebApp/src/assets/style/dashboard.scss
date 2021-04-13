@@ -1,5 +1,5 @@
-.cj-presentation {
-    padding-top: 40px;
+.cj-dashboard {
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -76,15 +76,6 @@
         opacity: 1;
     }
 }
-
-.cj-ctas {
-    display: flex;
-
-    .cj-btn:first-child {
-        margin-right: 24px;
-    }
-}
-
 
 @media screen and (max-width: 750px) {
     .cj-text {
