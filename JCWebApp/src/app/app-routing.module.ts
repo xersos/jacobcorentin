@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageResolver } from '@shared/resolver/homepage.resolver';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
-import { HelpComponent } from './help/help.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes: Routes = [
@@ -14,26 +14,25 @@ const appRoutes: Routes = [
         resolve: {HomepageResolver}
     },
     {
-        path: 'help',
-        component: HelpComponent,
-        resolve: {HomepageResolver}
+        path: 'about-me',
+        component: AboutMeComponent,
     },
     {
         path: 'forbidden',
         component: ForbiddenComponent,
         pathMatch: 'full',
-        resolve: {HomepageResolver}
     },
     {
         path: '**',
         component: NotFoundComponent,
-        resolve: {HomepageResolver}
     }
 ];
 
 export const appRoutedComponents = [
-    NotFoundComponent,
+    AboutMeComponent,
     DashboardComponent,
+    ForbiddenComponent,
+    NotFoundComponent,
 ];
 
 @NgModule({

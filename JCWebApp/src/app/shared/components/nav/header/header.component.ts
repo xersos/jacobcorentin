@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ThemeService } from '@shared/services';
 
-
 @Component({
-  selector: 'jc-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+  selector: 'jc-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavComponent {
+export class HeaderComponent {
+  @Output() public sidenavToggle = new EventEmitter();
+
   isDarkMode: boolean;
   showFiller = false;
 
@@ -23,4 +24,9 @@ export class NavComponent {
       ? this._themeService.update('light-mode')
       : this._themeService.update('dark-mode');
   }
+
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
+  }
+
 }

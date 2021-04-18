@@ -1,21 +1,21 @@
 .main-navigation {
-    background: transparent !important;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    will-change: transform;
-  }
+  background: transparent !important;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
 
-  .nav-logo {
-    float: left;
-    padding: 10px 0 10px 0;
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: 10px;
-  }
-  
-  .mr-8 {
-      margin-right: 8px;
-    }
+.nav-logo {
+  float: left;
+  padding: 10px 0 10px 0;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 10px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}

@@ -222,21 +222,39 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 }
 
 html, body { 
-  height: 100%; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; 
 }
 
 body {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
   padding: .5rem;
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d900ff;
+}
+
 main {
-  height: 100%;
+  // height: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
   margin-top: 20px;
-  margin-bottom: 15px !important;
-  min-height: calc(100vh - 300px);
+  margin-bottom: 15px;
+  // min-height: calc(100vh - 300px);
+  padding: 10px;
 }
 
 .container {
@@ -252,6 +270,14 @@ main {
     padding: 0 24px;
   }
 
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
 }
 
 // Specific component overrides, pieces that are not in line with the general theming

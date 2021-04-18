@@ -1,9 +1,9 @@
 <mat-toolbar class="main-navigation">
   <mat-toolbar-row>
-    <div class="nav-logo" *ngIf="isDarkMode">
+    <div class="nav-logo" *ngIf="isDarkMode" [routerLink]="['']">
       <img src="./../../assets/img/LogoWhite.png" height="48" alt="logo">
     </div>
-    <div class="nav-logo" *ngIf="!isDarkMode">
+    <div class="nav-logo" *ngIf="!isDarkMode" [routerLink]="['']">
       <img src="./../../assets/img/LogoBlack.png" height="48" alt="logo">
     </div>
     <span style="flex: 1 1 auto"></span>
