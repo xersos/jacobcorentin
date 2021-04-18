@@ -5,18 +5,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { FooterComponent } from '@shared/components/footer/footer.component';
 import { LoadingComponent } from '@shared/components/loading/loading.component';
 import { HeaderComponent } from '@shared/components/nav/header/header.component';
-import { HomepageResolver } from '@shared/resolver/homepage.resolver';
 
-import { EnvironmentConfigService, LoadingService } from '@shared/services';
+import { EnvironmentConfigService } from '@shared/services';
 import { SharedModule } from '@shared/shared.module';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { appRoutedComponents, AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-import { PageMaintenanceComponent } from './page-maintenance/page-maintenance.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
     imports: [
@@ -32,14 +30,11 @@ import { FooterComponent } from './shared/components/footer/footer.component';
         appRoutedComponents,
         FooterComponent,
         LoadingComponent,
-        PageMaintenanceComponent,
         HeaderComponent,
         LayoutComponent,
         AboutMeComponent
     ],
     providers: [
-        HomepageResolver,
-        LoadingService,
         {
             provide: APP_INITIALIZER,
             useFactory: (environmentConfigService: EnvironmentConfigService) =>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepageResolver } from '@shared/resolver/homepage.resolver';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,7 +10,6 @@ const appRoutes: Routes = [
     {
         path: '',
         component: DashboardComponent,
-        resolve: {HomepageResolver}
     },
     {
         path: 'about-me',
