@@ -5,9 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { CursorComponent } from '@shared/components/cursor/cursor.component';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { LoadingComponent } from '@shared/components/loading/loading.component';
-import { HeaderComponent } from '@shared/components/nav/header/header.component';
+import { NavComponent } from '@shared/components/nav/nav.component';
 
 import { EnvironmentConfigService } from '@shared/services';
 import { SharedModule } from '@shared/shared.module';
@@ -30,9 +31,10 @@ import { LayoutComponent } from './layout/layout.component';
         appRoutedComponents,
         FooterComponent,
         LoadingComponent,
-        HeaderComponent,
+        NavComponent,
         LayoutComponent,
-        AboutMeComponent
+        AboutMeComponent,
+        CursorComponent
     ],
     providers: [
         {

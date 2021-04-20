@@ -1,4 +1,4 @@
-.main-navigation {
+.toolbar {
   background: transparent !important;
   width: 100%;
   position: fixed;
@@ -18,4 +18,12 @@
 
 .mr-8 {
   margin-right: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+mat-sidenav {
+  width: 100%;
 }

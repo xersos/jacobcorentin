@@ -6,6 +6,9 @@
   <title>JCWebApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+  name="description"           
+  content="Hi, I'm Corentin, welcome to my portfolio">
   <link rel="icon" type="image/x-icon" href="./assets/icons/faviconBlack.png">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1976d2">
@@ -16,28 +19,6 @@
 
 <body class="mat-typography">
   <jc-root></jc-root>
-  <div class="cursor"></div>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
-
-<script>
-  const cursor = document.querySelector(".cursor");
-
-  document.addEventListener("mousemove", (e) => {
-    cursor.setAttribute(
-      "style",
-      "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-    );
-  });
-
-  document.addEventListener("click", () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-      cursor.classList.remove("expand");
-    }, 500);
-  });
-
-</script>
-
 </html>

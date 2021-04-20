@@ -26,6 +26,6 @@ export class LoadingComponent implements OnInit {
       setTimeout(() => {
         this.showLoading = !this.showLoading;
       }, 500);
-    }, 3000);
+    }, 4000);
   }
 }
