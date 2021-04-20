@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.icon {
+  color: rgb(255, 0, 0);
+}
+
 .social-menu ul {
   position: absolute;
   margin-top: 15px !important;
@@ -19,19 +23,23 @@
   margin: 0;
   display: flex;
 }
+
 .social-menu ul li {
   list-style: none;
   margin: 0 10px;
 }
+
 .social-menu ul li .fa {
   color: #000000;
   font-size: 25px;
   line-height: 50px;
   transition: .5s;
 }
+
 .social-menu ul li .fa:hover {
   color: #ffffff;
 }
+
 .social-menu ul li a {
   position: relative;
   display: block;
@@ -41,19 +49,18 @@
   background-color: white;
   text-align: center;
   transition: 0.5s;
-  transform: translate(0,0px);
+  transform: translate(0, 0px);
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
+
 .social-menu ul li a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
+
 .social-menu ul li:nth-child(1) a:hover {
   background-color: #24292e;
 }
+
 .social-menu ul li:nth-child(2) a:hover {
   background-color: #0077B5;
-}
-
-.icon {
-  color: rgb(255, 0, 0);
 }
