@@ -91,6 +91,7 @@ $dark-bg-alpha-12:    rgba(#2c2c2c, 0.12);
 
 $mat-light-theme-background: (
   background:               $light-background,
+  border-top:               $dark-bg-alpha-12,
   status-bar:               $light-bg-darker-20,
   app-bar:                  $light-bg-darker-5,
   hover:                    $dark-bg-alpha-4,
@@ -119,6 +120,7 @@ $light-bg-alpha-12:   rgba(#ffffff, 0.12);
 // Background palette for dark themes.
 $mat-dark-theme-background: (
   background:               $dark-background,
+  border-top:               $light-bg-alpha-12,
   status-bar:               $dark-bg-lighter-20,
   app-bar:                  $dark-bg-lighter-5,
   hover:                    $light-bg-alpha-4,
@@ -163,7 +165,7 @@ $mat-primary: (
 $theme-primary: mat-palette($mat-primary, main, lighter, darker);
 
 body {
-  --accent-color: #ffd740;
+  --accent-color: #ffffff;
   --accent-lighter-color: #ffe57f;
   --accent-darker-color: #ffc400;
   --text-accent-color: #{$dark-primary-text};
@@ -172,7 +174,7 @@ body {
 }
 
 $mat-accent: (
-  main: #ffd740,
+  main: #ffffff,
   lighter: #ffe57f,
   darker: #ffc400,
   200: #ffd740, // For slide toggle,
@@ -243,7 +245,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #ffd740;
+  background: #ffffff;
 }
 
 main {

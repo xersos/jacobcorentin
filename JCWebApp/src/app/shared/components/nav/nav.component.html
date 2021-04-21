@@ -24,10 +24,10 @@
   <mat-toolbar class="toolbar">
     <mat-toolbar-row>
       <div class="nav-logo" *ngIf="isDarkMode" [routerLink]="['']">
-        <img src="./../../assets/img/LogoWhite.png" height="48" alt="logo">
+        <img src="./../../assets/img/LogoWhite.svg" height="48" alt="logo">
       </div>
       <div class="nav-logo" *ngIf="!isDarkMode" [routerLink]="['']">
-        <img src="./../../assets/img/LogoBlack.png" height="48" alt="logo">
+        <img src="./../../assets/img/LogoBlack.svg" height="48" alt="logo">
       </div>
       <span style="flex: 1 1 auto"></span>
       <mat-slide-toggle aria-label="Theming" (click)="toggleDarkMode()" labelPosition="before" [(ngModel)]="isDarkMode">

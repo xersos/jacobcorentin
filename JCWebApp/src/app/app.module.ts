@@ -16,6 +16,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { appRoutedComponents, AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { LayoutComponent } from './layout/layout.component';
         NavComponent,
         LayoutComponent,
         AboutMeComponent,
-        CursorComponent
+        CursorComponent,
+        HeaderComponent
     ],
     providers: [
         {
