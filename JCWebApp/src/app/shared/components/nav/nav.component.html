@@ -30,6 +30,11 @@
         <img src="./../../assets/img/LogoBlack.svg" height="48" alt="logo">
       </div>
       <span style="flex: 1 1 auto"></span>
+      <ul class="nav-links" [ngClass]="{'hidden': (isHandset$ | async)}">
+        <li><a href="#" i18n="@@studies">STUDIES</a></li>
+        <li><a href="#" i18n="@@experiments">EXPERIMENTS</a></li>
+        <li><a href="#" i18n="@@contact">CONTACT</a></li>
+      </ul>
       <mat-slide-toggle aria-label="Theming" (click)="toggleDarkMode()" labelPosition="before" [(ngModel)]="isDarkMode">
         <mat-icon *ngIf="!isDarkMode" class="mr-8">brightness_high</mat-icon>
         <mat-icon *ngIf="isDarkMode">brightness_4</mat-icon>

@@ -67,3 +67,49 @@ mat-sidenav {
   left: 0;
   will-change: transform;
 }
+
+.nav-links {
+  float: right;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  transition: opacity .35s ease .75s;
+  list-style: none;
+  display: contents;
+}
+
+li { 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-links ul {
+  display: inline-block;
+}
+
+.nav-links a {
+  display: block;
+  padding: 10px 0;
+  font-family: League Spartan, 'Abel';
+  font-size: 20px;
+  position: relative;
+  color: #b0b2c3;
+  transition: color .35s ease;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  background-color: transparent;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: disc;
+}
