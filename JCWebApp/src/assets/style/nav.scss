@@ -74,7 +74,6 @@ mat-sidenav {
   margin: 0;
   padding: 0;
   top: 20px;
-  transition: opacity .35s ease .75s;
   list-style: none;
   display: contents;
 }
@@ -95,21 +94,19 @@ li {
   font-size: 20px;
   position: relative;
   color: #b0b2c3;
-  transition: color .35s ease;
-}
-
-a {
-  text-decoration: none;
+  overflow: hidden;
+  background: linear-gradient(to right, #fa7878, #ff4949 50%, #b0b2c3 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
   text-decoration-line: none;
-  text-decoration-thickness: initial;
-  text-decoration-style: initial;
-  text-decoration-color: initial;
-  background-color: transparent;
+  &:hover {
+    background-position: 0 100%;
+  }
 }
 
-ul {
-  list-style: disc;
-  list-style-position: initial;
-  list-style-image: initial;
-  list-style-type: disc;
-}
+

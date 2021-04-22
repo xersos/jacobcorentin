@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutMeComponent } from './about-me/about-me.component';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -13,7 +11,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'about-me',
-        component: AboutMeComponent,
+        loadChildren: () => import('src/app/about-me/about-me.module').then(m => m.AboutMeModule),
     },
     {
         path: 'forbidden',
@@ -27,7 +25,6 @@ const appRoutes: Routes = [
 ];
 
 export const appRoutedComponents = [
-    AboutMeComponent,
     DashboardComponent,
     ForbiddenComponent,
     NotFoundComponent,
