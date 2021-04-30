@@ -9,6 +9,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
@@ -39,6 +40,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatDatepickerModule,
         MatDialogModule,
         MatFormFieldModule,
+        MatGridListModule,
         MatIconModule,
         MatInputModule,
         MatListModule,
@@ -68,6 +70,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatDatepickerModule,
         MatDialogModule,
         MatFormFieldModule,
+        MatGridListModule,
         MatIconModule,
         MatInputModule,
         MatListModule,

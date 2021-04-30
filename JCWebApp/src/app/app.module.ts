@@ -2,9 +2,12 @@ import { APP_BASE_HREF } from '@angular/common';
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '@env/environment.prod';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { ContactComponent } from '@shared/components/contact/contact.component';
 import { CursorComponent } from '@shared/components/cursor/cursor.component';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { LoadingComponent } from '@shared/components/loading/loading.component';
@@ -23,10 +26,12 @@ import { LayoutComponent } from './layout/layout.component';
         BrowserAnimationsModule,
         FontAwesomeModule,
         LoadingBarRouterModule,
+        ServiceWorkerModule.register('ngsw-config.js', { enabled: environment.production }),
         SharedModule.forRoot(),
     ],
     declarations: [
         AppComponent,
+        ContactComponent,
         appRoutedComponents,
         FooterComponent,
         LoadingComponent,

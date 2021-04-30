@@ -12,7 +12,7 @@
       <a mat-list-item href="#" i18n="@@home">HOME</a>
       <a mat-list-item href="#" i18n="@@studies">STUDIES</a>
       <a mat-list-item href="#" i18n="@@experiments">EXPERIMENTS</a>
-      <a mat-list-item href="#" i18n="@@contact">CONTACT</a>
+      <a mat-list-item [routerLink]="['']" (click)="openDialog()" i18n="@@contact">CONTACT</a>
     </mat-nav-list>
     <div class="social-menu mobile">
       <ul>
@@ -33,7 +33,7 @@
       <ul class="nav-links" [ngClass]="{'hidden': (isHandset$ | async)}">
         <li><a href="#" i18n="@@studies">STUDIES</a></li>
         <li><a href="#" i18n="@@experiments">EXPERIMENTS</a></li>
-        <li><a href="#" i18n="@@contact">CONTACT</a></li>
+        <li><a [routerLink]="['']" (click)="openDialog()" i18n="@@contact">CONTACT</a></li>
       </ul>
       <mat-slide-toggle aria-label="Theming" (click)="toggleDarkMode()" labelPosition="before" [(ngModel)]="isDarkMode">
         <mat-icon *ngIf="!isDarkMode" class="mr-8">brightness_high</mat-icon>

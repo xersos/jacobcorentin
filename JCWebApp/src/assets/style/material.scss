@@ -18,7 +18,8 @@ $fontConfig: (
   body-1: mat-typography-level(14px, 20px, 400, 'Abel', 0.0179em),
   button: mat-typography-level(14px, 14px, 500, 'Abel', 0.0893em),
   caption: mat-typography-level(12px, 20px, 400, 'Abel', 0.0333em),
-  input: mat-typography-level(inherit, 1.125, 400, 'Abel', 1.5px)
+  input: mat-typography-level(inherit, 1.125, 400, 'Abel', 1.5px),
+  font-display: swap,
 );
 
 // Foreground Elements
@@ -292,4 +293,9 @@ main {
   .mat-badge-content {
     font-family: 'Abel';
   }
+}
+
+img {
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
 }
