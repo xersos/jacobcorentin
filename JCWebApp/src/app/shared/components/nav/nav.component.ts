@@ -29,7 +29,7 @@ export class NavComponent {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(ContactComponent, {width: 'auto'});
+    const dialogRef = this.dialog.open(ContactComponent, {width: '500px'});
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
