@@ -4,12 +4,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { environment } from '@env/environment';
 import { Contact } from '@shared/entities';
 
 @Injectable({ providedIn: 'root' })
 export class ContactService {
-    private readonly apiEndpoint = environment.apiUrl + '';
+    apiUrl = 'http://localhost:3000';
+    private readonly apiEndpoint = this.apiUrl + '';
 
     constructor(private _http: HttpClient) {
     }

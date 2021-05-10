@@ -44,4 +44,8 @@ export class NavComponent {
       : this._themeService.update('dark-mode');
   }
 
+  experimentsSection() {
+    document.getElementById('experiments').scrollIntoView({behavior: 'smooth'});
+  }
+
 }

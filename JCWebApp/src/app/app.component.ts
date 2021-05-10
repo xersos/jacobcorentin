@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router, RouterEvent } from '@angular/router';
-import { environment } from '@env/environment';
-import { EnvironmentConfigService } from '@shared/services';
 
 @Component({
   selector: 'jc-root',
@@ -10,14 +8,9 @@ import { EnvironmentConfigService } from '@shared/services';
 })
 export class AppComponent implements OnInit {
   loading: boolean;
-  isTestEnv = false;
   title = 'JCWebApp';
-  version = environment.version;
 
-  constructor(
-    router: Router,
-    private _environmentConfigService: EnvironmentConfigService
-  ) {
+  constructor(router: Router) {
     this.loading = false;
 
     router.events.subscribe(
@@ -32,6 +25,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.isTestEnv = !this._environmentConfigService.config.isProd;
   }
 }

@@ -273,6 +273,23 @@ main {
   }
 
 }
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 75em) {
+  .content {
+      width: 1170px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .content {
+      width: 95%;
+  }
+}
 // Specific component overrides, pieces that are not in line with the general theming
 // Handle buttons appropriately, with respect to line-height
 .mat-raised-button, .mat-stroked-button, .mat-flat-button {

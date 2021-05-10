@@ -1,18 +1,37 @@
 <header class="cj-header">
-  <div class="container">
-    <div class="cj-main">
-      <div class="cj-content">
-        <div class="cj-text">
-          <h1 class="cj-title">
-            Jacob Corentin
-          </h1>
-          <p class="cj-headline" i18n="@@webDevelopper">Web Developper</p>
-          <button class="button-about" mat-raised-button color="accent" [routerLink]="['/about-me']"
-            i18n="@@aboutMe">About me</button>
-        </div>
+  <div class="cj-main">
+    <div class="cj-content">
+      <div class="cj-text">
+        <h1 class="cj-title">
+          Jacob Corentin
+        </h1>
+        <p class="cj-headline" i18n="@@webDevelopper">Web Developper</p>
+        <button class="button-about" mat-raised-button color="accent" [routerLink]="['/about-me']"
+          i18n="@@aboutMe">About me</button>
       </div>
     </div>
-    <div class="arrow">
-    </div>
+  </div>
+  <div (click)="experimentsSection()" class="arrow"> 
   </div>
 </header>
+<section id="experiments" class="project-section">
+  <div class="section-mask"></div>
+  <div class="content">
+    <div class="section-text">
+      <h1 class="project-tittle-h1" i18n="experiments">Experiments</h1>
+    </div>
+    <div class="section-text">
+      <h2 class="project-tittle-h2" i18n="myWorks">My Works</h2>
+    </div>
+  </div>
+  <div class="projects">
+    <div class="projects-container">
+      <img src="" alt="Project Mobilité Verte" class="image">
+      <!-- <a [routerLink]="['/greenli']></a> -->
+    </div>
+    <div>
+      <p class="project-name" i18n="greenli">Greenli</p>
+      <p class="project-name grey" i18n="application">Application</p>
+    </div>
+  </div>
+</section>

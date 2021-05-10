@@ -7,17 +7,15 @@ import { environment } from '@env/environment.prod';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { ContactComponent } from '@shared/components/contact/contact.component';
-import { CursorComponent } from '@shared/components/cursor/cursor.component';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { LoadingComponent } from '@shared/components/loading/loading.component';
 import { NavComponent } from '@shared/components/nav/nav.component';
 
-import { EnvironmentConfigService } from '@shared/services';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { SharedModule } from '@shared/shared.module';
 import { appRoutedComponents, AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
     imports: [
@@ -42,16 +40,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
         LoadingComponent,
         NavComponent,
         LayoutComponent,
-        CursorComponent,
     ],
     providers: [
-        {
-            provide: APP_INITIALIZER,
-            useFactory: (environmentConfigService: EnvironmentConfigService) =>
-                () => environmentConfigService.load().toPromise(),
-            deps: [EnvironmentConfigService],
-            multi: true
-        },
         {
             provide: APP_BASE_HREF,
             useValue: '/',
