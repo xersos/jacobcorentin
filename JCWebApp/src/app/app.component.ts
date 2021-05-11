@@ -10,6 +10,14 @@ export class AppComponent implements OnInit {
   loading: boolean;
   title = 'JCWebApp';
 
+  siteLanguage: string = 'English';
+  siteLocale: string;
+  languageList = [
+  { code: 'en', label: 'English' },
+  { code: 'fr', label: 'Français' },
+  { code: 'de', label: 'Deutsch' }
+  ];
+
   constructor(router: Router) {
     this.loading = false;
 
@@ -25,5 +33,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.siteLocale = window.location.pathname.split('/')[1];
+    this.siteLanguage = this.languageList.find(f => f.code === this.siteLocale).label;
   }
 }

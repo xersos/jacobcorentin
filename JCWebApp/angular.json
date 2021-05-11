@@ -4,6 +4,13 @@
   "newProjectRoot": "projects",
   "projects": {
     "JCWebApp": {
+      "i18n": {
+        "locales": {
+          "en": "src/translate/messages.en.xlf",
+          "fr": "src/translate/messages.fr.xlf",
+          "de": "src/translate/messages.de.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -70,6 +77,15 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
+            "de": {
+              "localize": ["de"]
             }
           }
         },
@@ -81,6 +97,15 @@
           "configurations": {
             "production": {
               "browserTarget": "JCWebApp:build:production"
+            },
+            "en": {
+              "browserTarget": "angular-localization:build:en"
+            },
+            "fr": {
+              "browserTarget": "angular-localization:build:fr"
+            },
+            "de": {
+              "browserTarget": "angular-localization:build:de"
             }
           }
         },

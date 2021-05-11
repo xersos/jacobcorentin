@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="webDevelopper" datatype="html">
+        <source>Web Developper</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutMe" datatype="html">
+        <source>About me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3789062473839221073" datatype="html">
+        <source>Experiments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">experiments</note>
+      </trans-unit>
+      <trans-unit id="797112922503179322" datatype="html">
+        <source>My Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">myWorks</note>
+      </trans-unit>
+      <trans-unit id="6721491677878369132" datatype="html">
+        <source>Greenli : <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>March to July 2021.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">greenli</note>
+      </trans-unit>
+      <trans-unit id="2185435988217922445" datatype="html">
+        <source>Application carried out during my intership within the Liebherr company.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">application</note>
+      </trans-unit>
+      <trans-unit id="3063930390005211640" datatype="html">
+        <source>Tempo : <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>October to January 2021.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">tempo</note>
+      </trans-unit>
+      <trans-unit id="5786751082834015082" datatype="html">
+        <source>Receipt : <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>February to September 2020.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">receipt</note>
+      </trans-unit>
+      <trans-unit id="forbidden" datatype="html">
+        <source> Forbidden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden/forbidden.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cannotAccessToPage" datatype="html">
+        <source>You cannot access to this page.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden/forbidden.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNotFound" datatype="html">
+        <source> Page not found </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sorryPageCannotBeFound" datatype="html">
+        <source>We&apos;re sorry. The page you are looking for cannot be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="surname" datatype="html">
+        <source>Surname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="surnameisRequired" datatype="html">
+        <source> Surname is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameisRequired" datatype="html">
+        <source> Name is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailisRequired" datatype="html">
+        <source> Email is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comment" datatype="html">
+        <source>Comment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="commentisRequired" datatype="html">
+        <source> Comment is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="send" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/contact/contact.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home" datatype="html">
+        <source>1.HOME</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experiments" datatype="html">
+        <source>3.EXPERIMENTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="studies" datatype="html">
+        <source>2.ABOUT-ME</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact" datatype="html">
+        <source>4.CONTACT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/nav/nav.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
